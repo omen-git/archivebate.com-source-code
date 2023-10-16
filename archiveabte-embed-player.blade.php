@@ -93,9 +93,10 @@
 </head>
 
 <body>
-    // #### - POP ADS FOR THE PLAYER - ###
+    {{-- #### - POP ADS FOR THE PLAYER - ### --}}
     <script data-cfasync="false" type="text/javascript" src="//gmxvmvptfm.com/aas/r45d/vki/1979994/59fc4996.js"></script>
-
+    
+    {{-- #### - ADBLOCK DETECTOR - ### --}}
     <section id="detect" style="display:none">
         <h1>ADBLOCK DETECTED</h1>
         <p>Disable the adblock and reload the page</p>
@@ -103,10 +104,12 @@
 
     <div class="container">
         
+        {{-- #### - HLS VIDEO PLAYER - ### --}}
         <video id="hls-video">
             <source src="{{ $video->embed_link }}" type="application/x-mpegURL">
         </video>
 
+        {{-- #### - VIDEO PLAYER CONFIGS - ### --}}
         <script>
             fluidPlayer("hls-video", {
                 layoutControls: {
