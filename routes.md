@@ -1,65 +1,62 @@
-GET|HEAD   / ----------------------------------------------------------------------------------------------------------------------------------------------- index › VideoController@index<br>
-GET|HEAD   2257 ----------------------------------------------------------------------------------------------------------------------------------------------- usc › PageController@usc<br>
-GET|HEAD   account ----------------------------------------------------------------------------------------------------------------------------------------------- account › ProfileController@index<br>
-POST       account ----------------------------------------------------------------------------------------------------------------------------------------------- account-store › ProfileController@store<br>
-DELETE     account ----------------------------------------------------------------------------------------------------------------------------------------------- account-destroy › ProfileController@destroy<br>
-GET|HEAD   account/delete/success --------------------------------------------------------------------------------------------------------------------------------- account-remove › ProfileController@removed<br>
-POST       account/password -------------------------------------------------------------------------------------------------------------------------------- account-password › ProfileController@passwordUpdate<br>
-GET|HEAD   add-streamer ----------------------------------------------------------------------------------------------------------------------------------------------- add_streamer › StreamerController@create<br>
-POST       api/v1/report ----------------------------------------------------------------------------------------------------------------------------------  video-report › Api\AjaxEventController@reportStore<br>
-GET|HEAD   api/v1/search ----------------------------------------------------------------------------------------------------------------------------------------------- video-search › Api\SearchController@index<br>
-POST       api/v1/state/store ------------------------------------------------------------------------------------------------------------------------------ view-store › Api\AjaxEventController@viewStore<br>
-DELETE     api/v1/streamer/unfollow ---------------------------------------------------------------------------------------------------------------------------- streamer-unfollow › Api\AjaxEventController@removeFollow<br>
-GET|HEAD   api/v1/streamer/{user_id}/{username} ------------------------------------------------------------------------------------------------------------ streamer-follow › Api\AjaxEventController@getFollow<br>
-POST       api/v1/video/dislike --------------------------------------------------------------------------------------------------------------------- video-unlike › Api\AjaxEventController@destory<br>
-POST       api/v1/video/like ---------------------------------------------------------------------------------------------------------------------------------------- video-like › Api\AjaxEventController@store<br>
-POST       api/v1/video/remove ------------------------------------------------------------------------------------------------------------------------------------- video-remove › Api\AjaxEventController@removeVideo<br>
-POST       api/v1/video/save ---------------------------------------------------------------------------------------------------------------- video-save › Api\AjaxEventController@saveVideo<br>
-GET|HEAD   api/v1/video/{user_id}/{video_id} --------------------------------------------------------------------------------------------------------------- video-index › Api\AjaxEventController@index<br>
-GET|HEAD   collection --------------------------------------------------------------------------------------------------------------- collection › UploadController@collection<br>
-POST       comment/store -------------------------------------------------------------------------------------------------------------------------------------- comment-store › CommentController@store<br>
-GET|HEAD   comment/{vid} -------------------------------------------------------------------------------------------------------------------------------------- comment-fetch › CommentController@fetch<br>
-GET|HEAD   cookie-policy ---------------------------------------------------------------------------------------------------------------------------------------- cookie › PageController@cookie<br>
-DELETE     delete-streamer/{id} --------------------------------------------------------------------------------------------------------------------- delete_streamer › StreamerController@delete<br>
-GET|HEAD   dmca -------------------------------------------------------------------------------------------------------------------------------------------------------- dmca › PageController@dmca<br>
-GET|HEAD   dmca/process ------------------------------------------------------------------------------------------------------------------------------------ dmca-process › DmcaController@index<br>
-POST       dmca/process ------------------------------------------------------------------------------------------------------------------------------------------------------------------ DmcaController@store<br>
-GET|HEAD   embed/{data} ------------------------------------------------------------------------------------------------------------------------------------------------- embed-view › EmbedController@view<br>
-GET|HEAD   explore ------------------------------------------------------------------------------------------------------------------------------------------------ explore › VideoController@explore<br>
-GET|HEAD   following ---------------------------------------------------------------------------------------------------------------------------------------------------------- following › HomeController@following<br>
-GET|HEAD   gender/{value} ------------------------------------------------------------------------------------------------------------------------------------------ gender › PlatformController@gender<br>
-GET|HEAD   home --------------------------------------------------------------------------------------------------------------------------------------------------------------------- home › HomeController@index<br>
-GET|HEAD   join/premium -------------------------------------------------------------------------------------------------------------------------------------------------------------- premium › PageController@premium<br>
-GET|HEAD   likes -------------------------------------------------------------------------------------------------------------------------------------------------------------- likes › HomeController@likedVideos<br>
-GET|HEAD   login ---------------------------------------------------------------------------------------------------------------------------------------------- login › Auth\LoginController@showLoginForm<br>
-POST       login -------------------------------------------------------------------------------------------------------------------------------------------------------------- Auth\LoginController@login<br>
-GET|HEAD   login/google --------------------------------------------------------------------------------------------------------------------------------------- login-google › SocialiteController@google<br>
-GET|HEAD   login/google/redirect ----------------------------------------------------------------------------------------------------- login-google-redirect › SocialiteController@googleRedirect<br>
-GET|HEAD   login/twitter -------------------------------------------------------------------------------------------------------------------------------------------------- login-twitter › SocialiteController@twitter<br>
-GET|HEAD   login/twitter/redirect ------------------------------------------------------------------------------------------------ login-twitter-redirect › SocialiteController@twitterRedirect<br>
-POST       logout -------------------------------------------------------------------------------------------------------------------------------------------------- logout › Auth\LoginController@logout<br>
-GET|HEAD   model/{username} ------------------------------------------------------------------------------------------------------------------------------------------------------------- model<br>
-GET|HEAD   notifications ----------------------------------------------------------------------------------------------------------------------------------------- notifications › PageController@notifications<br>
-GET|HEAD   password/confirm ----------------------------------------------------------------------------------------- password-confirm › Auth\ConfirmPasswordController@showConfirmForm<br>
-POST       password/confirm ------------------------------------------------------------------------------------------------------------------ Auth\ConfirmPasswordController@confirm<br>
-POST       password/email -------------------------------------------------------------------------------------------------------------- password-email › Auth\ForgotPasswordController@sendResetLinkEmail<br>
-GET|HEAD   password/reset ----------------------------------------------------------------------------------------------------------- password-request › Auth\ForgotPasswordController@showLinkRequestForm<br>
-POST       password/reset ---------------------------------------------------------------------------------------------------------- password-update › Auth\ResetPasswordController@reset<br>
-GET|HEAD   password/reset/{token} -------------------------------------------------------------------------------------------------------------- password-reset › Auth\ResetPasswordController@showResetForm<br>
-GET|HEAD   personalize -------------------------------------------------------------------------------------------------------------------------- personalize › VideoController@personalize<br>
-GET|HEAD   platform/{value} ----------------------------------------------------------------------------------------------------------------------------- platforms › PlatformController@index<br>
-GET|HEAD   press --------------------------------------------------------------------------------------------------------------------------------------------------------------------- press › PageController@press<br>
-GET|HEAD   privacy ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- privacy › PageController@privacy<br>
-GET|HEAD   profile/{username} --------------------------------------------------------------------------------------------------------------------------------------------------------- profile › VideoController@streamer<br>
-POST       profile/{username} --------------------------------------------------------------------------------------------------------------- profile-follow › VideoController@streamerStore<br>
-GET|HEAD   profile/{username}/most-popular ---------------------------------------------------------------------------------------- profile-popular › VideoController@popular<br>
-POST       profile/{username}/most-popular ------------------------------------------------------------------------------------------------------------- profile-follow-mp › VideoController@streamerStore<br>
-GET|HEAD   profile/{username}/photos ------------------------------------------------------------------------------------------------------------------------------- photos › VideoController@photos<br>
-GET|HEAD   register ------------------------------------------------------------------------------------------------------------------- register › Auth\RegisterController@showRegistrationForm<br>
-POST       register -------------------------------------------------------------------------------------------------------------------------------------------- Auth\RegisterController@register<br>
-GET|HEAD   sanctum/csrf-cookie ---------------------------------------------------------------------------------------------------------------------- sanctum-csrf-cookie › Laravel\Sanctum › CsrfCookieController@show<br>
-POST       store-streamer ----------------------------------------------------------------------------------------------------------------------------------------------------- store_streamer › StreamerController@store<br>
-GET|HEAD   watchlater ---------------------------------------------------------------------------------------------------------------------------------------------- watchlater › HomeController@watchlater<br>
-DELETE     watchlater/{video_id} ----------------------------------------------------------------------------------------------------------- watchlater-remove › HomeController@watchlaterRemove<br>
-
-[64] routes
+GET|HEAD   / ------------------------------------------------------------------------------------------------- index › VideoController@index<br>
+GET|HEAD   2257 ---------------------------------------------------------------------------------------------- usc › PageController@usc<br>
+GET|HEAD   account ------------------------------------------------------------------------------------------- account › ProfileController@index<br>
+POST       account ------------------------------------------------------------------------------------------- account-store › ProfileController@store<br>
+DELETE     account ------------------------------------------------------------------------------------------- account-destroy › ProfileController@destroy<br>
+GET|HEAD   account/delete/success ---------------------------------------------------------------------------- account-remove › ProfileController@removed<br>
+POST       account/password ---------------------------------------------------------------------------------- account-password › ProfileController@passwordUpdate<br>
+GET|HEAD   add-streamer -------------------------------------------------------------------------------------- add_streamer › StreamerController@create<br>
+POST       api/v1/report ------------------------------------------------------------------------------------- video-report › Api\AjaxEventController@reportStore<br>
+GET|HEAD   api/v1/search ------------------------------------------------------------------------------------- video-search › Api\SearchController@index<br>
+POST       api/v1/state/store -------------------------------------------------------------------------------- view-store › Api\AjaxEventController@viewStore<br>
+DELETE     api/v1/streamer/unfollow -------------------------------------------------------------------------- streamer-unfollow › Api\AjaxEventController@removeFollow<br>
+GET|HEAD   api/v1/streamer/{user_id}/{username} -------------------------------------------------------------- streamer-follow › Api\AjaxEventController@getFollow<br>
+POST       api/v1/video/dislike ------------------------------------------------------------------------------ video-unlike › Api\AjaxEventController@destory<br>
+POST       api/v1/video/like --------------------------------------------------------------------------------- video-like › Api\AjaxEventController@store<br>
+POST       api/v1/video/remove ------------------------------------------------------------------------------- video-remove › Api\AjaxEventController@removeVideo<br>
+POST       api/v1/video/save --------------------------------------------------------------------------------- video-save › Api\AjaxEventController@saveVideo<br>
+GET|HEAD   api/v1/video/{user_id}/{video_id} ----------------------------------------------------------------- video-index › Api\AjaxEventController@index<br>
+GET|HEAD   collection ---------------------------------------------------------------------------------------- collection › UploadController@collection<br>
+POST       comment/store ------------------------------------------------------------------------------------- comment-store › CommentController@store<br>
+GET|HEAD   comment/{vid} ------------------------------------------------------------------------------------- comment-fetch › CommentController@fetch<br>
+GET|HEAD   cookie-policy ------------------------------------------------------------------------------------- cookie › PageController@cookie<br>
+DELETE     delete-streamer/{id} ------------------------------------------------------------------------------ delete_streamer › StreamerController@delete<br>
+GET|HEAD   dmca ---------------------------------------------------------------------------------------------- dmca › PageController@dmca<br>
+GET|HEAD   dmca/process -------------------------------------------------------------------------------------- dmca-process › DmcaController@index<br>
+POST       dmca/process -------------------------------------------------------------------------------------- DmcaController@store<br>
+GET|HEAD   embed/{data} -------------------------------------------------------------------------------------- embed-view › EmbedController@view<br>
+GET|HEAD   explore ------------------------------------------------------------------------------------------- explore › VideoController@explore<br>
+GET|HEAD   following ----------------------------------------------------------------------------------------- following › HomeController@following<br>
+GET|HEAD   gender/{value} ------------------------------------------------------------------------------------ gender › PlatformController@gender<br>
+GET|HEAD   home ---------------------------------------------------------------------------------------------- home › HomeController@index<br>
+GET|HEAD   join/premium -------------------------------------------------------------------------------------- premium › PageController@premium<br>
+GET|HEAD   likes --------------------------------------------------------------------------------------------- likes › HomeController@likedVideos<br>
+GET|HEAD   login --------------------------------------------------------------------------------------------- login › Auth\LoginController@showLoginForm<br>
+POST       login --------------------------------------------------------------------------------------------- Auth\LoginController@login<br>
+GET|HEAD   login/google -------------------------------------------------------------------------------------- login-google › SocialiteController@google<br>
+GET|HEAD   login/google/redirect ----------------------------------------------------------------------------- login-google-redirect › SocialiteController@googleRedirect<br>
+GET|HEAD   login/twitter ------------------------------------------------------------------------------------- login-twitter › SocialiteController@twitter<br>
+GET|HEAD   login/twitter/redirect ---------------------------------------------------------------------------- login-twitter-redirect › SocialiteController@twitterRedirect<br>
+POST       logout -------------------------------------------------------------------------------------------- logout › Auth\LoginController@logout<br>
+GET|HEAD   notifications ------------------------------------------------------------------------------------- notifications › PageController@notifications<br>
+GET|HEAD   password/confirm ---------------------------------------------------------------------------------- password-confirm › Auth\ConfirmPasswordController@showConfirmForm<br>
+POST       password/confirm ---------------------------------------------------------------------------------- Auth\ConfirmPasswordController@confirm<br>
+POST       password/email ------------------------------------------------------------------------------------ password-email › Auth\ForgotPasswordController@sendResetLinkEmail<br>
+GET|HEAD   password/reset ------------------------------------------------------------------------------------ password-request › Auth\ForgotPasswordController@showLinkRequestForm<br>
+POST       password/reset ------------------------------------------------------------------------------------ password-update › Auth\ResetPasswordController@reset<br>
+GET|HEAD   password/reset/{token} ---------------------------------------------------------------------------- password-reset › Auth\ResetPasswordController@showResetForm<br>
+GET|HEAD   personalize --------------------------------------------------------------------------------------- personalize › VideoController@personalize<br>
+GET|HEAD   platform/{value} ---------------------------------------------------------------------------------- platforms › PlatformController@index<br>
+GET|HEAD   press --------------------------------------------------------------------------------------------- press › PageController@press<br>
+GET|HEAD   privacy ------------------------------------------------------------------------------------------- privacy › PageController@privacy<br>
+GET|HEAD   profile/{username} -------------------------------------------------------------------------------- profile › VideoController@streamer<br>
+POST       profile/{username} -------------------------------------------------------------------------------- profile-follow › VideoController@streamerStore<br>
+GET|HEAD   profile/{username}/most-popular ------------------------------------------------------------------- profile-popular › VideoController@popular<br>
+POST       profile/{username}/most-popular ------------------------------------------------------------------- profile-follow-mp › VideoController@streamerStore<br>
+GET|HEAD   profile/{username}/photos ------------------------------------------------------------------------- photos › VideoController@photos<br>
+GET|HEAD   register ------------------------------------------------------------------------------------------ register › Auth\RegisterController@showRegistrationForm<br>
+POST       register ------------------------------------------------------------------------------------------ Auth\RegisterController@register<br>
+GET|HEAD   sanctum/csrf-cookie ------------------------------------------------------------------------------- sanctum-csrf-cookie › Laravel\Sanctum › CsrfCookieController@show<br>
+POST       store-streamer ------------------------------------------------------------------------------------ store_streamer › StreamerController@store<br>
+GET|HEAD   watchlater ---------------------------------------------------------------------------------------- watchlater › HomeController@watchlater<br>
+DELETE     watchlater/{video_id} ----------------------------------------------------------------------------- watchlater-remove › HomeController@watchlaterRemove<br>
