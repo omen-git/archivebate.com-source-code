@@ -1,4 +1,4 @@
-``
+
 GET|HEAD   / ----------------------------------------------------------------------------- index › VideoController@index  
 GET|HEAD   2257 -------------------------------------------------------------------------- usc › PageController@usc  
 GET|HEAD   account ----------------------------------------------------------------------- account › ProfileController@index  
@@ -61,4 +61,3 @@ GET|HEAD   sanctum/csrf-cookie -------------------------------------------------
 POST       store-streamer ---------------------------------------------------------------- store_streamer › StreamerController@store  
 GET|HEAD   watchlater -------------------------------------------------------------------- watchlater › HomeController@watchlater  
 DELETE     watchlater/{video_id} --------------------------------------------------------- watchlater-remove › HomeController@watchlaterRemove  
-``
