@@ -5,17 +5,7 @@ POST       account -------------------------------------------------------------
 DELETE     account ----------------------------------------------------------------------- account-destroy › ProfileController@destroy  
 GET|HEAD   account/delete/success -------------------------------------------------------- account-remove › ProfileController@removed  
 POST       account/password -------------------------------------------------------------- account-password › ProfileController@passwordUpdate  
-GET|HEAD   add-streamer ------------------------------------------------------------------ add_streamer › StreamerController@create  
-POST       api/v1/report ----------------------------------------------------------------- video-report › Api\AjaxEventController@reportStore  
-GET|HEAD   api/v1/search ----------------------------------------------------------------- video-search › Api\SearchController@index  
-POST       api/v1/state/store ------------------------------------------------------------ view-store › Api\AjaxEventController@viewStore  
-DELETE     api/v1/streamer/unfollow ------------------------------------------------------ streamer-unfollow › Api\AjaxEventController@removeFollow  
-GET|HEAD   api/v1/streamer/{user_id}/{username} ------------------------------------------ streamer-follow › Api\AjaxEventController@getFollow  
-POST       api/v1/video/dislike ---------------------------------------------------------- video-unlike › Api\AjaxEventController@destory  
-POST       api/v1/video/like ------------------------------------------------------------- video-like › Api\AjaxEventController@store  
-POST       api/v1/video/remove ----------------------------------------------------------- video-remove › Api\AjaxEventController@removeVideo  
-POST       api/v1/video/save ------------------------------------------------------------- video-save › Api\AjaxEventController@saveVideo  
-GET|HEAD   api/v1/video/{user_id}/{video_id} --------------------------------------------- video-index › Api\AjaxEventController@index  
+GET|HEAD   add-streamer ------------------------------------------------------------------ add_streamer › StreamerController@create   
 GET|HEAD   collection -------------------------------------------------------------------- collection › UploadController@collection  
 POST       comment/store ----------------------------------------------------------------- comment-store › CommentController@store  
 GET|HEAD   comment/{vid} ----------------------------------------------------------------- comment-fetch › CommentController@fetch  
@@ -60,3 +50,17 @@ GET|HEAD   sanctum/csrf-cookie -------------------------------------------------
 POST       store-streamer ---------------------------------------------------------------- store_streamer › StreamerController@store  
 GET|HEAD   watchlater -------------------------------------------------------------------- watchlater › HomeController@watchlater  
 DELETE     watchlater/{video_id} --------------------------------------------------------- watchlater-remove › HomeController@watchlaterRemove  
+
+
+## API routes [ For AJAX Call ]
+
+POST       api/v1/report ----------------------------------------------------------------- video-report › Api\AjaxEventController@reportStore  
+GET|HEAD   api/v1/search ----------------------------------------------------------------- video-search › Api\SearchController@index  
+POST       api/v1/state/store ------------------------------------------------------------ view-store › Api\AjaxEventController@viewStore  
+DELETE     api/v1/streamer/unfollow ------------------------------------------------------ streamer-unfollow › Api\AjaxEventController@removeFollow  
+GET|HEAD   api/v1/streamer/{user_id}/{username} ------------------------------------------ streamer-follow › Api\AjaxEventController@getFollow  
+POST       api/v1/video/dislike ---------------------------------------------------------- video-unlike › Api\AjaxEventController@destory  
+POST       api/v1/video/like ------------------------------------------------------------- video-like › Api\AjaxEventController@store  
+POST       api/v1/video/remove ----------------------------------------------------------- video-remove › Api\AjaxEventController@removeVideo  
+POST       api/v1/video/save ------------------------------------------------------------- video-save › Api\AjaxEventController@saveVideo  
+GET|HEAD   api/v1/video/{user_id}/{video_id} --------------------------------------------- video-index › Api\AjaxEventController@index 
