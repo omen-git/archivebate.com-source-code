@@ -30,9 +30,8 @@ Welcome to the archivebate.com source code repository. This repository contains 
 
 If the prospect of acquiring the archivebate.com source code piques your interest or if you have any questions, please feel free to reach out to us at
 
-[aladeen.general.mail@gmail.com [email]](hello.omenn@gmail.com
-)
+[hello.omenn@gmail.com [email]](hello.omenn@gmail.com)
 
-[https://t.me/dezabhog [telegram]](https://t.me/dezabhog)
+[https://t.me/omen [telegram]](https://t.me/dezabhog)
  
 I'm enthusiastic about discussing this opportunity further with you.
