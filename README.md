@@ -32,6 +32,6 @@ If the prospect of acquiring the archivebate.com source code piques your interes
 
 <mailto:hello.omenn@gmail.com>
 
-[https://t.me/omen [telegram]](https://t.me/dezabhog)
+[https://t.me/omen](https://t.me/dezabhog)
  
 I'm enthusiastic about discussing this opportunity further with you.
