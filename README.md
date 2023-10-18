@@ -30,7 +30,7 @@ Welcome to the archivebate.com source code repository. This repository contains 
 
 If the prospect of acquiring the archivebate.com source code piques your interest or if you have any questions, please feel free to reach out to us at
 
-[hello.omenn@gmail.com <mailto:hello.omenn@gmail.com>
+hello.omenn@gmail.com <mailto:hello.omenn@gmail.com>
 
 [https://t.me/omen [telegram]](https://t.me/dezabhog)
  
